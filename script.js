@@ -1,4 +1,44 @@
 /* Global variables and constants */
+const editorInit = `# Welcome to my React Markdown Previewer!
+
+## This is a sub-heading...
+### And here's some other cool stuff:
+
+Heres some code, \`<div></div> \`, between 2 backticks.
+
+\`\`\`
+// this is multi-line code:
+
+function anotherExample(firstLine, lastLine) {
+    if (firstLine == "\`\`\`" && lastLine == "\`\`\`") {
+        return multiLineCode;
+    }
+}
+\`\`\`
+
+You can also make text **bold**... whoa!
+Or _italic_.
+Or... wait for it... **_both!_*.
+
+There's also [links](https://www.freecodecamp.org), and
+
+> Block Quotes!
+
+And if you want to get really crazy, even tables:
+
+| Wild Header | Crazy Header | Another Header? |
+| ------------ | ------------- | ------------- |
+| Your content can | be here, and it | can be here.... |
+| And here. | Okay. | I think we get it. |
+
+- And of course there are lists.
+  - Some are bulleted.
+    - With different indentation levels.
+    - That look like this.
+
+![freeCodeCamp Logo](https://cdn.freecodecamp.org/testable-projects-fcc/images/fcc_secondary.svg)
+`;
+
 const expandIcon = '<i class="fas fa-expand-arrows-alt lead"></i>';
 const shrinkIcon = '<i class="fas fa-compress lead"></i>';
 
@@ -376,6 +416,10 @@ $(document).ready(function () {
         }
         
     });
+
+    // Set editor initial content and trigger keyup
+    $('#editor-content').html(editorInit);
+    $('#editor textarea').trigger('keyup');
 });
 
 
