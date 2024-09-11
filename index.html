@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Markdown Previewer</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Font Awesome CSS -->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+  </head>
+  <body class="bg-secondary">
+
+    <div class="container">
+
+        <button id="premi" type="button" class="btn btn-primary">Premi</button>
+        
+        <!-- Editor -->
+        <div id="editor" class="main-row row justify-content-center mt-5 mb-n5">
+            <div class="col-lg-6">
+                <!-- Editor Navbar -->
+                <div class="row">
+                    <div class="col">
+                        <nav class="navbar navbar-dark bg-dark">
+                            <span class="navbar-brand" href="#"><i class="fas fa-screwdriver    "></i> Editor</span>
+                            <button id="expand-editor-btn" type="button" class="btn btn-dark"><i class="fas fa-expand-arrows-alt lead"></i></button>
+                        </nav>
+                    </div>
+                </div>
+                <!-- Editor content -->
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group border border-dark bg-light">
+                            <textarea id="editor-content" class="form-control" name="" id="" rows="10" placeholder="Insert text here..."></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Previewer -->
+        <div id="previewer" class="main-row row justify-content-center mt-5">
+            <div class="col">
+                <!-- Previewer Navbar -->
+                <div class="row">
+                    <div class="col">
+                        <nav class="navbar navbar-dark bg-dark">
+                            <span class="navbar-brand" href="#"><i class="fas fa-binoculars    "></i> Previewer</span>
+                            <button id="expand-previewer-btn" type="button" class="btn btn-dark"><i class="fas fa-expand-arrows-alt lead"></i></button>
+                        </nav>
+                    </div>
+                </div>
+                <!-- Previewer content -->
+                <div class="row">
+                    <div class="col">
+                        <div id="previewer-content" class="border border-dark bg-light">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
